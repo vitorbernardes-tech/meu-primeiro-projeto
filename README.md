@@ -1,4 +1,4 @@
-# potential-engine
+# About my first project on GitHub
 Estou criando um sistema de cadastro de novos usuários
 from flask import Flask, request, render_template_string
 
