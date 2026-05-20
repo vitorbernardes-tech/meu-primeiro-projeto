@@ -1,4 +1,4 @@
-# Importamos o 'render_template' em vez do antigo 'render_template_string'
+# About my first project on GitHub
 from flask import Flask, request, render_template
 
 app = Flask(__name__)
