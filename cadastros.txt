@@ -1,0 +1,16 @@
+Nome: Vitor de Castro Bernardes | E-mail: vitorbernardes743@gmail.com
+Nome: Vitor de Castro Bernardes | E-mail: vitorbernardes743@gmail.com
+Nome: Helena J Castro | E-mail: vitorbernardes743@gmail.com
+Nome: Helena Julia de Castro | E-mail: vitorbernardes743@gmail.com
+Nome: Vitor de Castro Bernardes | E-mail: vitorbernardes743@gmail.com
+Nome: Vitor de Castro Bernardes | E-mail: vitorbernardes743@gmail.com
+Nome: Helena Julia de Castro | E-mail: vitorbernardes743@gmail.com
+Nome: Vitor de Castro Bernardes | E-mail: vitorbernardes743@gmail.com
+Nome: vitor | E-mail: None
+Nome: Vitor Bernardes | Idade: 21 | Local: São Paulo | E-mail: vitorbernardes743@gmail.com | Senha: 21g76h90
+Nome: Vitor Bernardes | Idade: 52 | Local: São Paulo | E-mail: vitorbernardes743@gmail.com | Senha: 20
+Nome: Vitor Bernardes | Idade: 41 | Local: São Paulo | E-mail: vitorbernardes743@gmail.com | Senha: 10
+Nome: Vitor Bernardes | Idade: 22 | Local: São Paulo | E-mail: vitorbernardes743@gmail.com | Senha: 21
+Nome: Vitor Bernardes | Idade: 21 | Local: São Paulo | E-mail: vitorbernardes743@gmail.com | Senha: 15997354
+Nome: Vitor Bernardes | Idade: 21 | Local: São Paulo | E-mail: vitorbernardes743@gmail.com | Senha: 15997354
+Nome: Vitor de Castro Bernardes | Idade: 21 | Local: São Paulo | E-mail: vitorbernardes743@gmail.com | Senha_Hash: scrypt:32768:8:1$7vDZP7PdrrJXJfQn$67de8f93f4477161b043289f93c5bb2e91c51a5b880b3f32232dc4bee9627d761ec0bf338e754f04727aca05e42c7e245c7f2455a9d551b23a9c268690e9c691
