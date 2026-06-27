@@ -62,4 +62,4 @@ The system captures user data and performs crucial server-side validations befor
 
 1. **Clone este repositório:**
    ```bash
-   https://github.com/vitorbernardes-tech/meu-primeiro-projeto.gitt)
+   https://github.com/vitorbernardes-tech/meu-primeiro-projeto.git
