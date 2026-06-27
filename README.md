@@ -1,61 +1,65 @@
-# About my first project on GitHub
-from flask import Flask, request, render_template
+# 📝 Sistema de Cadastro Web (Web Registration System)
 
-app = Flask(__name__)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-Framework-black.svg)](https://flask.palletsprojects.com/)
+[![HTML/CSS](https://img.shields.io/badge/Frontend-HTML%2FCSS-orange.svg)]()
 
-# --- ROTAS (LÓGICA) ---
+*(Scroll down for the English version)*
 
-@app.route('/')
-def inicial():
-    # Agora o Flask vai AUTOMATICAMENTE dentro da pasta 'templates' procurar o arquivo
-    return render_template('homepage.html')
+## 🇧🇷 Português
+
+### Sobre o Projeto
+Este é um sistema web full-stack desenvolvido para o cadastro de usuários. O objetivo do projeto foi aplicar conceitos fundamentais de desenvolvimento web, utilizando **Python com o framework Flask** para a construção da lógica de back-end (servidor) e **HTML/CSS** para a interface do usuário. 
+
+O sistema não apenas captura os dados, mas realiza validações importantes no lado do servidor antes de persistir as informações.
+
+### 🚀 Funcionalidades
+- **Interface Web:** Formulário de cadastro simples e responsivo.
+- **Validação de Regras de Negócio (Back-end):**
+  - Restrição de idade (usuários devem ter entre 18 e 120 anos).
+  - Verificação de segurança de senha (mínimo de 8 caracteres).
+  - Confirmação de igualdade de senhas.
+- **Persistência de Dados:** Tratamento de arquivos (I/O) em Python para salvar os dados localmente de forma segura.
+- **Listagem de Usuários:** Rota específica para leitura e exibição dos registros cadastrados com tratamento de erros (`try/except`).
+
+---
+
+## 🇺🇸 English
+
+### About the Project
+This is a full-stack web registration system. The goal of this project was to apply fundamental web development concepts using **Python with the Flask framework** to build the back-end logic, alongside **HTML/CSS** for the user interface.
+
+The system captures user data and performs crucial server-side validations before data persistence.
+
+### 🚀 Features
+- **Web Interface:** Simple and responsive registration form.
+- **Business Logic Validation (Back-end):**
+  - Age restriction (users must be between 18 and 120 years old).
+  - Password security check (minimum of 8 characters).
+  - Password confirmation matching.
+- **Data Persistence:** Python File I/O handling to save data locally.
+- **User Listing:** Specific route to read and display registered users with robust error handling (`try/except`).
+
+---
+
+## 🛠️ Tecnologias Utilizadas / Technologies
+
+* **Back-end:** Python, Flask
+* **Front-end:** HTML, CSS
+* **Persistência:** Manipulação de arquivos `.txt` (File I/O)
+
+---
+
+## 📸 Demonstração Visual / Screenshots
+
+> <img width="1919" height="1079" alt="Captura de tela 2026-06-27 170200" src="https://github.com/user-attachments/assets/23357de2-0be0-4568-84be-c4047016e993" />
 
 
-@app.route('/confirmar', methods=['POST'])
-def confirmar():
-    nome = request.form.get('nome')
-    sobrenome = request.form.get('sobrenome')
-    idade_texto = request.form.get('idade')
-    local = request.form.get('local')
-    email = request.form.get('email')
-    senha = request.form.get('senha')
-    confirmacao = request.form.get('confirmacao')
 
-    idade = int(idade_texto)
+---
 
-    # 1º Teste: Verifica a idade
-    if idade < 18 or idade > 120:
-        return f"<h1>Erro!</h1><p>Você precisa ter entre 18 e 120 anos para se cadastrar.</p><a href='/'>Voltar</a>"
+## ⚙️ Como executar o projeto localmente / How to run locally
 
-    # 2º Teste: Verifica se a senha tem pelo menos 8 caracteres
-    elif len(senha) < 8:
-        return f"<h1>Erro!</h1><p>Sua senha é muito curta. Ela precisa ter no mínimo 8 caracteres.</p><a href='/'>Voltar</a>"
-
-    # 3º Teste: Verifica se a senha e a confirmação são iguais
-    elif senha != confirmacao:
-        return f"<h1>Erro!</h1><p>As senhas não conferem. Volte e tente novamente.</p><a href='/'>Voltar</a>"
-
-    # 4º Passo: Se passou em todos os testes acima, salva os dados!
-    else:
-        with open("cadastros.txt", "a", encoding="utf-8") as arquivo:
-            arquivo.write(
-                f"Nome: {nome} {sobrenome} | Idade: {idade} | Local: {local} | E-mail: {email} | Senha: {senha}\n")
-
-        return f"<h1>Sucesso!</h1><p>{nome} {sobrenome} foi salvo com sucesso.</p><a href='/'>Voltar</a>"
-
-@app.route('/lista')
-def lista():
-    try:
-        with open("cadastros.txt", "r", encoding="utf-8") as arquivo:
-            linhas = arquivo.readlines()
-
-        resultado = "<h2>Lista de Cadastrados</h2><ul>"
-        for linha in linhas:
-            resultado += f"<li>{linha}</li>"
-        resultado += "</ul><br><a href='/'>Voltar</a>"
-        return resultado
-    except FileNotFoundError:
-        return "<h1>Ninguém cadastrado ainda.</h1><a href='/'>Voltar</a>"
-
-if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+1. **Clone este repositório:**
+   ```bash
+   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
