@@ -62,4 +62,4 @@ The system captures user data and performs crucial server-side validations befor
 
 1. **Clone este repositório:**
    ```bash
-   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
+   https://github.com/vitorbernardes-tech/meu-primeiro-projeto.gitt)
